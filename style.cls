@@ -52,7 +52,6 @@ textwidth=144mm,
 
 
 
-
 %题干正文间距
 \newcommand{\TiGanSpace}{ \vspace{1em} } %题干，与正文的间距
 
@@ -369,5 +368,4 @@ textwidth=144mm,
 \end{center}
 \newpage
 }
-
 

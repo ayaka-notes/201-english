@@ -1,5 +1,5 @@
 \documentclass{style}
-
+\usepackage{lipsum}
 %定义页面背景色
 \definecolor{mycolor01}{RGB}{255, 255, 255}%银河白
 \definecolor{mycolor02}{RGB}{250, 249, 222}%杏仁黄
@@ -14,6 +14,13 @@
 %设置背景颜色
 \pagecolor{mycolor01}	% mycolor01 - mycolor09
 
+\newcommand{\checkpagenumber}{
+  \ifodd\thepage
+    \newpage\hbox{}
+  \else
+    % 当前页是偶数页，无需插入空白页
+  \fi
+}
 
 \begin{document}
 
@@ -47,11 +54,11 @@
 %后期把答案做进去后，就基本无影响
 
 
-\include{1/2001年-英语一}%
-\include{1/2002年-英语一}%
-\include{1/2003年-英语一}%
-\include{1/2004年-英语一}%
-\include{1/2005年-英语一}%
+\include{1/2001年-英语一}
+\include{1/2002年-英语一}
+\include{1/2003年-英语一}
+\include{1/2004年-英语一}
+\include{1/2005年-英语一}
 \include{1/2006年-英语一}%
 \include{1/2007年-英语一}%
 \include{1/2008年-英语一}%
